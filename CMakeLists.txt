@@ -16,6 +16,7 @@ add_library(stlcut SHARED ${SOURCE_CC})
 target_link_libraries(stlcut
     m)
 
+set_target_properties(stlcut PROPERTIES SOVERSION 1)
 target_include_directories(stlcut PUBLIC
     ${PROJECT_SOURCE_DIR}
 )
